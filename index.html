@@ -7,10 +7,13 @@ How did Dr. B do it
     </head>
 <body>
     <p>
-   The hardest thing that I understood was the map function. What map does is it takes an array and brings the contents of that array to the function that we create. Then the function transforms each content of that array to whatever we have told the function to do. For instance, if we ask a function to add 3 to each number of an array. Map will bring each number from an array to the function and once the function has added 3 to that number map will add the new number to the array. Map will do this for each number within an array.   
+   To update the initial histogram with the old test grades, you used an even listener which is was the function that you used in the on click for the DOM element button with the text “Test 2”. Whenever that button is clicked the initial array used for the test 1 is updated with a new array with the test grades for test 2 and the new data is bind to the rectangles in the histogram. Once the data in bind then all you needed to do was update the height and y values of the rectangles using the new array. Moreover, you used the fill attribute to depict whether a student’s grade improved or deteriorated. Lastly you used transition() to show the, the changes in the graph from test 1 to test 2, the default value set for the transition is 250ms and you can change it by added duration() after your syntax to show how long it will take to make the transition. Then you used the d3.ease function as well to depict the transition in a smoother manner, I believe it was d3.easecubeincubeout as the graph initially accelerated and then decelerated until they snapped into place.  
     </p>
     <p>
-    I don’t understand the visualizations that we read about in books. I know there are certain parts to what makes a good and a bad visualization, but the standard deviations and other measures to check your visualization make no sense to me. In addition, in the book he talks about different types of visualization, but he never makes comparison on how we can use these visualizations in computer science and how does these visualizations help us become better computer scientists.  
+    Then to add the interactivity to the rect you added the on mouseover for the rect and then you created a function that would display the change in test grade from test 1 to test 2 by accessing the grades from your array with your dataset and displaying it as text when you hover onto the rectangle. 
+    </p>
+    <p>
+        In addition, you drew a scatter plot as well, and joined each point for a specific student with each other so that it represents the change in the grade. 
     </p>
    
 </body>
